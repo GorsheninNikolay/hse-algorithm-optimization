@@ -6,7 +6,7 @@
 Студент магистратуры Павел пристрастился к игре Heroes of Might and Magic. Ему понадобилось набрать армию из своего города. Следующая таблица отражает силу и стоимость существ в разных ресурсах:
 ```
 
-<img width="648" alt="Screenshot 2025-03-26 at 20 13 55" src="https://github.com/user-attachments/assets/a8e86b71-b44c-437e-acf9-553f70f6a97a" />
+<img width="776" alt="Screenshot 2025-03-26 at 20 14 24" src="https://github.com/user-attachments/assets/a6397e09-71ef-4882-b5d9-c5c7409e8166" />
 
 ```
 Цель - максимизировать общую силу отряда, учитывая имеющиеся ресурсы
