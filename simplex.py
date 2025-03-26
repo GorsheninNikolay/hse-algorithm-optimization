@@ -44,9 +44,9 @@ def simplex_method(z_to_max, coefficients, limitations):
                 multiplier = table[i, pivot_col]
                 table[i, :] -= multiplier * table[pivot_row, :]
 
-        # print(f"Итерация. Pivot: строка {pivot_row}, столбец {pivot_col}")
-        # print(table)
-        # print("\n")
+        print(f"Итерация. Pivot: строка {pivot_row}, столбец {pivot_col}")
+        print(table)
+        print("\n")
 
     # Извлекаем решение
     solution = np.zeros(num_vars)
@@ -65,12 +65,12 @@ def simplex_method(z_to_max, coefficients, limitations):
 
 if __name__ == "__main__":
     m1 = 2
-    m2 = 2
+    m2 = 0
     m3 = 1
 
     k1 = 3
     k2 = 1
-    k3 = 0
+    k3 = 2
 
     d1 = 4
     d2 = 3
@@ -82,8 +82,8 @@ if __name__ == "__main__":
         [m3, k3, d3],
     ]
 
-    R = [20, 20, 20]  # Запасы
-    P = [5, 7, 8]  # Сила
+    R = [231, 77, 55]  # Запасы
+    P = [156, 253, 312]  # Сила
 
     wizards, knights, dragons, target_val = simplex_method(P, A, R)
     print(

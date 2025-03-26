@@ -3,6 +3,7 @@ import simplex
 import math
 
 
+# TODO: Переделать, тут решение может быть неправильным
 def branch_and_bound(c, A, b):
     best_solution, best_value = None, -np.inf
 
@@ -40,12 +41,12 @@ def branch_and_bound(c, A, b):
 
 if __name__ == "__main__":
     m1 = 2
-    m2 = 2
+    m2 = 0
     m3 = 1
 
     k1 = 3
     k2 = 1
-    k3 = 0
+    k3 = 2
 
     d1 = 4
     d2 = 3
@@ -57,8 +58,8 @@ if __name__ == "__main__":
         [m3, k3, d3],
     ]
 
-    R = [12, 5, 2]  # Запасы
-    P = [5, 7, 8]  # Сила
+    R = [231, 77, 55]  # Запасы
+    P = [156, 253, 312]  # Сила
 
     best_solution, best_value = branch_and_bound(P, A, R)
     wizards, knights, dragons = best_solution
